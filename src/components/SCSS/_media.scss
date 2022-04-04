@@ -1,0 +1,59 @@
+@use "./variables" as *;
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: $container-width-md;
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section#contact {
+    .container {
+      flex-direction: column;
+      .contact-options {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: $container-width-ms;
+  }
+  section {
+    > {
+      h2 {
+        margin-top: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    gap: 10px !important;
+  }
+  section#about {
+    .container {
+      .about-cards {
+        article {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes up-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -40px;
+  }
+}

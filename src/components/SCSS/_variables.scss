@@ -1,0 +1,93 @@
+$main-bg: #1f1f38;
+$main-bg-variant: #2c2c6c;
+$color-primary: #4db5ff;
+$color-primary-variant: rgba(77, 181, 255, 0.4);
+$color-white: #fff;
+$color-light: rgba(255, 255, 255, 0.6);
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-ms: 90%;
+$main-transition: all 0.4s ease;
+
+.container {
+  width: $container-width-lg;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.text-light {
+  color: $color-light;
+}
+a {
+  color: $color-primary;
+  transition: all 0.4s;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+%btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  border: {
+    width: 1px solid $color-primary;
+    radius: 0.5rem;
+  }
+  transition: $main-transition;
+}
+
+.btn {
+  @extend %btn;
+  &:hover {
+    background-color: $color-white;
+    color: $main-bg;
+  }
+  &-primary {
+    background-color: $color-primary;
+    color: $main-bg;
+    @extend %btn;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+section {
+  min-height: 100vh;
+  margin: {
+    top: 8rem;
+  }
+  > {
+    h2 {
+      text-align: center;
+      color: $color-primary;
+      margin: {
+        bottom: 3rem;
+      }
+    }
+    h5 {
+      text-align: center;
+      color: $color-light;
+    }
+  }
+}
