@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/adel-portfolio/static/css/main.06f5ae54.css",
+    "main.js": "/adel-portfolio/static/js/main.45aceeb7.js",
+    "index.html": "/adel-portfolio/index.html",
+    "main.06f5ae54.css.map": "/adel-portfolio/static/css/main.06f5ae54.css.map",
+    "main.45aceeb7.js.map": "/adel-portfolio/static/js/main.45aceeb7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06f5ae54.css",
+    "static/js/main.45aceeb7.js"
+  ]
+}
